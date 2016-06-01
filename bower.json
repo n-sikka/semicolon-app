@@ -1,0 +1,20 @@
+{
+  "name": "symptum-app",
+  "description": "symptum main app",
+  "main": "server.js",
+  "authors": [
+    "symptum"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "symptum"
+  ],
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

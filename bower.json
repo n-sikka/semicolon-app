@@ -18,6 +18,9 @@
     "tests"
   ],
   "dependencies": {
-    "ngprogress": "^1.1.3"
+    "ngprogress": "^1.1.3",
+    "angular-cookies": "~1.4.2",
+    "angular-sanitize": "~1.4.2",
+    "angular-messages": "~1.4.2"
   }
 }

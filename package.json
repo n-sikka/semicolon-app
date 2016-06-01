@@ -10,5 +10,8 @@
     "symptum"
   ],
   "author": "symptum",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "angular-ui-router": "^0.3.0"
+  }
 }

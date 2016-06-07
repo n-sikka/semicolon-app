@@ -7,12 +7,12 @@ An opinionated kickstarter for [AngularJS](http://angularjs.org) projects.
 
 Install Node.js and then:
 
-$ git clone git@github.com:n-sikka/angular-boilerplate.git
-$ cd angular-boilerplate
-$ sudo npm -g install gulp bower
-$ npm install
-$ bower install
-$ gulp server
+- git clone git@github.com:n-sikka/angular-boilerplate.git
+- cd angular-boilerplate
+- sudo npm -g install gulp bower
+- npm install
+- bower install
+- gulp server
 
 App will be live on localhost:3000
 

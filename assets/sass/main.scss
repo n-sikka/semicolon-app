@@ -1,10 +1,13 @@
-// @import "settings/_variables";
-
-// main.scss
-/* inject:imports */
-/* endinject */
+/***** CONFIG IMPORTS *****/
+@import "settings/_variables.scss";
+@import "settings/_settings.scss";
+@import "settings/_mixins.scss";
 
 h1{
-  color: green;
+  color: $settings;
   font-size: 100px;
+}
+h2{
+  color: $variable;
+  font-size: 50px;
 }

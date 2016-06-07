@@ -1,8 +1,9 @@
 var gulp = require('gulp'),
     connect = require('gulp-connect'),
-    util = require('gulp-util'),
     sass = require('gulp-sass'),
+    concat = require('gulp-concat'),
     inject = require('gulp-inject'),
+    sourcemaps = require('gulp-sourcemaps');
     livereload = require('gulp-livereload');
 
 gulp.task('connect', function() {
@@ -13,28 +14,23 @@ gulp.task('connect', function() {
   });
 });
 
-
 gulp.task('sass', function() {
-    return gulp.src('assets/sass/main.scss')
-    /**
-     * Dynamically injects @import statements into the main.scss file, allowing
-     * .scss files to be placed around the app structure with the component
-     * or page they apply to.
-     */
-        .pipe(inject(gulp.src(['assets/sass/**/*.scss'], {read: true, cwd: 'assets/**/.scss'}), {
-            starttag: '/* inject:imports */',
-            endtag: '/* endinject */',
-            transform: function (filepath) {
-                return '@import ".' + filepath + '";';
-            }
-        }))
-        .pipe(sass())
-        .pipe(gulp.dest('dist/css'));
+  return gulp.src(['assets/sass/**/*.scss', 'assets/sass/settings/_variables.scss'])
+  .pipe(sourcemaps.init())
+  .pipe(concat('index.scss'))
+  .pipe(sass().on('error', sass.logError))
+  .pipe(sourcemaps.write('sourcemaps'))
+  .pipe(gulp.dest('dist/css'))
 });
-// gulp.task('styles', function() {
-//     gulp.src('assets/**/*.scss')
-//         .pipe(sass().on('error', sass.logError))
-//         .pipe(gulp.dest('dist/css/'));
-// });
 
-gulp.task('serve', ['connect', 'styles']);
+gulp.task('dev')
+
+gulp.task('prod', ['sass'])
+
+
+gulp.task('watch-sass', function() {
+  gulp.watch('assets/sass/**/*.scss', ['sass']);
+});
+
+
+gulp.task('serve', ['connect', 'sass', 'watch-sass']);

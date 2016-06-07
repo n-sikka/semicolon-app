@@ -1,13 +1,14 @@
-/***** CONFIG IMPORTS *****/
-@import "settings/_variables.scss";
-@import "settings/_settings.scss";
-@import "settings/_mixins.scss";
+//***** CONFIG IMPORTS *****
+@import 'settings/_variables';
+@import 'settings/_settings';
+@import 'settings/_mixins';
 
-h1{
+h1 {
   color: $settings;
   font-size: 100px;
 }
-h2{
+
+h2 {
   color: $variable;
   font-size: 50px;
 }

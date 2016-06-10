@@ -7,7 +7,6 @@ bower_components/
 coverage/
 .sass-cache/
 .idea/
-
 assets/js
 assets/css
 dist/

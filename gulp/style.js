@@ -6,6 +6,22 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps');
 
 
+
+gulp.task('compile-change:scss', function() {
+  gulp.watch('assets/sass/**/*.scss', ['sass:dev']);
+});
+
+// to check sass for any wrong coding conventions
+gulp.task('check:sass', function(){
+  return gulp.src(['assets/sass/**/*.scss'])
+  .pipe(sassLint(
+    {
+      'endless' : true
+    }
+  ))
+  .pipe(sassLint.format())
+})
+
 // compile sass for production
 gulp.task('sass', function() {
   return gulp.src(['assets/sass/**/*.scss'])
@@ -30,21 +46,9 @@ gulp.task('sass:dev', function() {
 });
 
 
-// to check sass for any wrong coding conventions
-gulp.task('sass:check', function(){
-  return gulp.src(['assets/sass/**/*.scss'])
-  .pipe(sassLint(
-    {
-      'endless' : true
-    }
-  ))
-  .pipe(sassLint.format())
-})
-
-
 // watcher for any change
-gulp.task('compile-change', function() {
-  gulp.watch('assets/sass/**/*.scss', ['sass', 'sass:dev']);
-});
-
-gulp.task('watch:style', ['compile-change', 'sass', 'sass:dev']);
+gulp.task('watch:style', [
+  'compile-change:scss',
+  'check:sass',
+  'sass:dev'
+]);

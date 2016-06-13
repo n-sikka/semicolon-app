@@ -12,7 +12,7 @@ Install Node.js and then:
 - sudo npm -g install gulp bower
 - npm install
 - bower install
-- gulp server
+- gulp serve
 
 App will be live on localhost:3000
 
@@ -21,4 +21,3 @@ App will be live on localhost:3000
 - NPM
 - Bower
 - LiveReload
-  

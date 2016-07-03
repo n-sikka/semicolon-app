@@ -5,7 +5,6 @@
     .module('semicolon')
     .config(routerConfig);
 
-  /** @ngInject */
   function routerConfig($stateProvider, $urlRouterProvider) {
     var _dirPath = 'app/views/app/';
 
@@ -15,7 +14,9 @@
     $stateProvider
       .state('home', {
         url: '/home',
-        templateUrl: _dirPath + 'pages/home/home.html'
+        templateUrl: _dirPath + 'pages/home/home.html',
+        controller: 'MainCtrl',
+        controllerAs: 'vm'
       });
 
   }

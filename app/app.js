@@ -1,8 +1,9 @@
 (function(){
 
-  angular.module('semicolon', [
-    'ui.bootstrap',
-    'ui.router'
-  ])
+  angular
+    .module('semicolon', [
+      'ui.bootstrap',
+      'ui.router'
+    ])
 
 })();

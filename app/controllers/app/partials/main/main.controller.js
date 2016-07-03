@@ -3,9 +3,9 @@
     .module('semicolon')
     .controller( 'MainCtrl', controller);
 
-  function controller($scope, $log, $http) {
+  function controller() {
+    var vm = this;
 
-    $scope.company = "Semicolon Inc.";
-
+    vm.company = "Semicolon Inc.";
   }
 })();

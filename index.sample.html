@@ -2,7 +2,7 @@
 <html ng-app="semicolon">
   <head>
     <meta charset="utf-8">
-    <title>Enterprise Boilerplate</title>
+    <title ng-controller="MainCtrl">{{vm.company}}</title>
     <!-- inject:css -->
     <!-- endinject -->
 
@@ -59,19 +59,6 @@
 
     <!-- inject:js -->
     <!-- endinject -->
-
-    <script>
-        /*BXSLIDER OPTIONS*/
-        $('.bxslider').bxSlider({
-        minSlides: 4,
-        maxSlides: 4,
-        slideWidth: 170,
-        slideMargin: 10,
-        ticker: true,
-        tickerHover: true,
-        speed: 50000
-      });
-    </script>
 
     <!-- <script type="text/javascript" src="dist/js/index.js"/> -->
     <script type="text/javascript" src="assets/js/index.js"/>

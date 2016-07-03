@@ -33,7 +33,6 @@ gulp.task('script:dev', function () {
               .pipe(eslint.format())
               .pipe(sourcemaps.init())
               .pipe(concat('index.js'))
-              .pipe(ngAnnotate())
               .pipe(sourcemaps.write('sourcemaps'))
               .pipe(gulp.dest('assets/js'))
 });

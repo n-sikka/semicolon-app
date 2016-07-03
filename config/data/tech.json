@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "image": "assets/images/logos/ai.png"
+  },
+  {
+    "id": 1,
+    "image": "assets/images/logos/corel.png"
+  },
+  {
+    "id": 2,
+    "image": "assets/images/logos/ps.png"
+  },
+  {
+    "id": 3,
+    "image": "assets/images/logos/css.png"
+  },
+  {
+    "id": 4,
+    "image": "assets/images/logos/html.png"
+  },
+  {
+    "id": 5,
+    "image": "assets/images/logos/js.png"
+  },
+  {
+    "id": 6,
+    "image": "assets/images/logos/angularjs.png"
+  },
+  {
+    "id": 7,
+    "image": "assets/images/logos/jquery.png"
+  },
+  {
+    "id": 8,
+    "image": "assets/images/logos/angularMaterial.png"
+  },
+  {
+    "id": 9,
+    "image": "assets/images/logos/bootstrap.png"
+  },
+  {
+    "id": 10,
+    "image": "assets/images/logos/materialize.png"
+  },
+  {
+    "id": 11,
+    "image": "assets/images/logos/django.png"
+  },
+  {
+    "id": 12,
+    "image": "assets/images/logos/python.png"
+  },
+  {
+    "id": 13,
+    "image": "assets/images/logos/android.png"
+  },
+  {
+    "id": 14,
+    "image": "assets/images/logos/sqlite.png"
+  }
+]

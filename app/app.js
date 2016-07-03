@@ -1,3 +1,8 @@
-angular.module('symptum', [
-  'ui.bootstrap'
-])
+(function(){
+
+  angular.module('semicolon', [
+    'ui.bootstrap',
+    'ui.router'
+  ])
+
+})();

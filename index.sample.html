@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="semicolon">
   <head>
     <meta charset="utf-8">
     <title>Enterprise Boilerplate</title>
@@ -10,15 +10,72 @@
     <link rel="stylesheet" href="assets/css/index.css">
 
   </head>
-  <body>
-    <h1>Hello World!</h1>
+  <header>
+    <div id="si-header" class="jumbotron text-center jumbo jumbo-img">
 
+        <div class="row-fluid">
+          <div class="container">
+            <div class="col-md-offset-5 col-md-2">
+              <img id="jumbo-logo" class="img-responsive" src="https://www.filepicker.io/api/file/6S40ER6cRSGncUwVAtD5">
+            </div>
+          </div>
+        </div>
+
+        <h1 id="jumbo-title">Semicolon Inc.</h1>
+        <h3 id="jumbo-quote"><i>We terminate your problems!</i></h3>
+
+          <ul class="social-list list-inline">
+          <li id="social-icon">
+            <a class="jumbotron-buttons" class = "si-button" href="https://www.facebook.com/pages/Semicolon-Inc/711202062260751" target="_blank">
+              <i class="si-fb jumbo-social fa fa-facebook-square fa-4x"></i>
+              <!-- <img class="jumbo-social-img img-thumbnail img-circle" src="images/jumbo-facebook.png"> -->
+            </a>
+          </li>
+          <li id="social-icon">
+            <a class="jumbotron-buttons" href="https://www.instagram.com/semicoloninc" target="_blank">
+              <i class="si-twitter jumbo-social fa fa-twitter-square fa-4x"></i>
+              <!-- <img class="jumbo-social-img  img-thumbnail img-circle" src="images/jumbo-instagram.png"> -->
+            </a>
+          </li>
+          <li id="social-icon">
+            <a class="jumbotron-buttons" href="https://www.twitter.com/semicoloninc" target="_blank">
+              <i class="si-instagram jumbo-social fa fa-instagram fa-4x"></i>
+              <!-- <img class="jumbo-social-img  img-thumbnail img-circle" src="images/jumbo-twitter.png"> -->
+            </a>
+          </li>
+          <li id="social-icon">
+            <a class="jumbotron-buttons" href="https://www.behance.net/nsikka" target="_blank">
+              <i class="si-behance jumbo-social fa  fa-behance-square fa-4x"></i>
+              <!-- <img class="jumbo-social-img  img-thumbnail img-circle" src="images/jumbo-twitter.png"> -->
+            </a>
+          </li>
+        </ul>
+      </div> <!-- end of si-jumbotron -->
+
+  </header>
+  <body>
+
+    <div ui-view></div>
 
     <!-- inject:js -->
     <!-- endinject -->
 
-    <!-- <script type="text/javascript" src="dist/js/app.js"/> -->
-    <script type="text/javascript" src="assets/js/app.js"/>
+    <script>
+        /*BXSLIDER OPTIONS*/
+        $('.bxslider').bxSlider({
+        minSlides: 4,
+        maxSlides: 4,
+        slideWidth: 170,
+        slideMargin: 10,
+        ticker: true,
+        tickerHover: true,
+        speed: 50000
+      });
+    </script>
+
+    <!-- <script type="text/javascript" src="dist/js/index.js"/> -->
+    <script type="text/javascript" src="assets/js/index.js"/>
 
   </body>
+  <social-footer></social-footer>
 </html>

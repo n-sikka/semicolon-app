@@ -1,0 +1,77 @@
+<nav scroll class="navbar navbar-inverse navbar-static-top si-navbar" id="si-nav">
+    <div class="container-fluid">
+    <div class="navbar-header">
+       <button type="button" class="navbar-toggle nav-button collapsed" data-toggle="collapse" aria-expanded="false" data-target="#si-navbar">
+        <span class="sr-only">Toggle navigation</span>
+            <span class="glyphicon glyphicon-option-vertical"></span>
+      </button>
+        <a href="#si-header" class="navbar-brand" onclick="$('window').scrollTop(0);">
+          <span>
+            <img class="img-circle" width="27" height="auto" src="https://www.filepicker.io/api/file/6S40ER6cRSGncUwVAtD5/convert?w=50">
+          </span>
+          <span >Semicolon Inc.</span>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="si-navbar">
+       <ul class="nav navbar-nav navbar-right">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Clients</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#domains">Technologies</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>		<!-- END OF NAVBAR -->
+
+
+<script type="text/javascript">
+  (function(){
+    $(window).scroll(function() {
+      var navPos = $(document).scrollTop()+70;
+      var winH = $(window).height();
+        var navbar = $('#si-nav');
+      // var navH = $('#si-nav').height();
+      //  console.log(navH);
+      // console.log('winH');
+      // console.log(navPos);
+      // console.log("navPos");
+
+      if(navPos>winH){
+         // console.log("nav Touched WinTop!");
+        navbar.addClass("navbar-fixed-top");
+        navbar.removeClass("navbar-static-top");
+      }
+      else{
+       // console.log("nav Detatched!");
+        navbar.removeClass("navbar-fixed-top");
+        navbar.addClass("navbar-static-top");
+      }
+    });
+
+    $(window).scroll(function() {
+      var navPos = $(document).scrollTop()+70;
+      var winH = $(window).height();
+        var navbar = $('#si-nav');
+      // var navH = $('#si-nav').height();
+      //  console.log(navH);
+      // console.log('winH');
+      // console.log(navPos);
+      // console.log("navPos");
+
+      if(navPos>winH){
+         // console.log("nav Touched WinTop!");
+        navbar.addClass("navbar-fixed-top");
+        navbar.removeClass("navbar-static-top");
+      }
+      else{
+       // console.log("nav Detatched!");
+        navbar.removeClass("navbar-fixed-top");
+        navbar.addClass("navbar-static-top");
+      }
+    });
+  })();
+</script>

@@ -9,7 +9,6 @@
           <img class="service-img img-responsive img-thumbnail img-circle" src="assets/images/website.png">
           <h4>WEBSITE DESIGNING</h4>
           <p>We create Mobile first, cross browser , secure,  fun & creative websites!</p>
-          <a href="#contact" class="more">Get a Quote</a>
         </div>
       </div>	 <!-- end of services-web -->
 
@@ -18,7 +17,6 @@
           <img class="service-img img-responsive img-thumbnail img-circle" src="assets/images/android.png">
           <h4>MOBILE APPLICATION</h4>
           <p>We have creative and dedicated developers to get you the best products possible at a pocket friendly rate!</p>
-          <a href="#contact" class="more">Get a Quote</a>
         </div>
       </div>  <!-- end of services-android -->
 
@@ -27,7 +25,6 @@
           <img class="service-img img-responsive img-thumbnail img-circle"  src="assets/images/graphic.png">
           <h4>GRAPHIC DESIGNING</h4>
           <p>We get you the best, personalized and cheap graphic designing solutions in the market!</p>
-          <a href="#contact" class="more">Get a Quote</a>
         </div>
       </div>  <!-- end of services-graphic -->
     </div>
@@ -186,53 +183,53 @@
   </div>
 </div>
 
-<div id="domains" class="row-fluid slide" ng-controller="MainCtrl">
+<div id="domains" class="row-fluid slide" ng-init="vm.getTech()">
   <h1>Technologies We Use</h1>
   <ul class="bxslider row text-center slide-content domain-cont">
     <li class="col-md-1 col-xs-4 tech-item">
-      <img class="img-responsive img-thumbnail" src="assets/images/logos/ai.png">
+      <img class="img-responsive img-thumbnail" ng-src="{{vm.technologies[0].image}}">
     </li>
     <li class="col-md-1 col-xs-4 tech-item">
-      <img class="img-responsive img-thumbnail" src="assets/images/logos/corel.png">
+      <img class="img-responsive img-thumbnail" ng-src="{{vm.technologies[1].image}}">
     </li>
     <li class="col-md-1 col-xs-4 tech-item">
-      <img class="img-responsive img-thumbnail" src="assets/images/logos/ps.png">
+      <img class="img-responsive img-thumbnail" ng-src="{{vm.technologies[2].image}}">
     </li>
     <li class="col-md-1 col-xs-4 tech-item">
-      <img class="img-responsive img-thumbnail" src="assets/images/logos/css.png">
+      <img class="img-responsive img-thumbnail" ng-src="{{vm.technologies[3].image}}">
     </li>
     <li class="col-md-1 col-xs-4 tech-item">
-      <img class="img-responsive img-thumbnail" src="assets/images/logos/html.png">
+      <img class="img-responsive img-thumbnail" ng-src="{{vm.technologies[4].image}}">
     </li>
     <li class="col-md-1 col-xs-4 tech-item">
-      <img class="img-responsive img-thumbnail" src="assets/images/logos/js.png">
+      <img class="img-responsive img-thumbnail" ng-src="{{vm.technologies[5].image}}">
     </li>
     <li class="col-md-1 col-xs-4 tech-item">
-      <img class="img-responsive img-thumbnail" src="assets/images/logos/angularjs.png">
+      <img class="img-responsive img-thumbnail" ng-src="{{vm.technologies[6].image}}">
     </li>
     <li class="col-md-1 col-xs-4 tech-item">
-      <img class="img-responsive img-thumbnail" src="assets/images/logos/jquery.png">
+      <img class="img-responsive img-thumbnail" ng-src="{{vm.technologies[7].image}}">
     </li>
     <li class="col-md-1 col-xs-4 tech-item">
-      <img class="img-responsive img-thumbnail" src="assets/images/logos/angularMaterial.png">
+      <img class="img-responsive img-thumbnail" ng-src="{{vm.technologies[8].image}}">
     </li>
     <li class="col-md-1 col-xs-4 tech-item">
-      <img class="img-responsive img-thumbnail" src="assets/images/logos/bootstrap.png">
+      <img class="img-responsive img-thumbnail" ng-src="{{vm.technologies[9].image}}">
     </li>
     <li class="col-md-1 col-xs-4 tech-item">
-      <img class="img-responsive img-thumbnail" src="assets/images/logos/materialize.png">
+      <img class="img-responsive img-thumbnail" ng-src="{{vm.technologies[10].image}}">
     </li>
     <li class="col-md-1 col-xs-4 tech-item">
-      <img class="img-responsive img-thumbnail" src="assets/images/logos/django.png">
+      <img class="img-responsive img-thumbnail" ng-src="{{vm.technologies[11].image}}">
     </li>
     <li class="col-md-1 col-xs-4 tech-item">
-      <img class="img-responsive img-thumbnail" src="assets/images/logos/python.png">
+      <img class="img-responsive img-thumbnail" ng-src="{{vm.technologies[12].image}}">
     </li>
     <li class="col-md-1 col-xs-4 tech-item">
-      <img class="img-responsive img-thumbnail" src="assets/images/logos/android.png">
+      <img class="img-responsive img-thumbnail" ng-src="{{vm.technologies[13].image}}">
     </li>
     <li class="col-md-1 col-xs-4 tech-item">
-      <img class="img-responsive img-thumbnail" src="assets/images/logos/sqlite.png">
+      <img class="img-responsive img-thumbnail" ng-src="{{vm.technologies[14].image}}">
     </li>
   </ul>
 </div>  <!-- END OF SKILLS -->

@@ -1,7 +1,8 @@
-# angular-boilerplate
-enterprise seed for an enterprise level angular app.
+# Semicolon Inc.
 
-An opinionated kickstarter for [AngularJS](http://angularjs.org) projects.
+Single Page Web Application [Semicolon Inc.](http://semicoloninc.com/).
+
+Semicolon Inc. is a service providing company that provides solutions for Graphic Designing, Web Design and Development and Mobile Application Development.
 
 ## Quick Start
 
@@ -15,6 +16,15 @@ Install Node.js and then:
 - gulp serve
 
 App will be live on localhost:3000
+
+# Technologies used
+- HTML/CSS
+- JavaScript
+- JQuery
+- Angular Js
+- Node SASS
+- Django (not in this repo)
+- Bootstrap 3.x
 
 # Tools used
 - Gulp
